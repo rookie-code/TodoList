@@ -19,7 +19,7 @@ jobs:
     - name: Set up .NET Core
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '3.1.301'
+        dotnet-version: '5.0.x'
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
@@ -52,5 +52,5 @@ jobs:
       with:
         app-name: 'maska-app'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_d245dcf87f7b4ad6b2bd527bafc9ab1a }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_4f0e3a886f844172ac53550b9328ef35 }}
         package: .
